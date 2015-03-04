@@ -1,0 +1,18 @@
+<body>
+  {{>main}}
+</body>
+
+<template name="main">
+  <div class="wrapper">
+    {{>spectogram}}
+  </div>
+</template>
+
+<template name="spectogram">
+  <div class="spectogram">
+    <div id="waterfall-overlay" class="overlay">
+      <div class="play">&#9658;</div>
+    </div>
+    <canvas id="waterfall"></canvas>
+  </div>
+</template>
